@@ -641,9 +641,15 @@ const visualGuides = {
 function openArticle(articleId) {
     const article = articles[articleId];
     if (article) {
+        const modal = document.getElementById('articleModal');
+        const modalContent = modal.querySelector('.modal-content');
         document.getElementById('articleContent').innerHTML = article.content;
-        document.getElementById('articleModal').style.display = 'block';
+        modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        // Reset scroll position to top
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
     }
 }
 
@@ -651,21 +657,39 @@ function openArticle(articleId) {
 function openVisualGuide(guideId) {
     const guide = visualGuides[guideId];
     if (guide) {
+        const modal = document.getElementById('visualModal');
+        const modalContent = modal.querySelector('.modal-content');
         document.getElementById('visualContent').innerHTML = `<div class="visual-guide-content">${guide.content}</div>`;
-        document.getElementById('visualModal').style.display = 'block';
+        modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        // Reset scroll position to top
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
     }
 }
 
 // Close Modals
 function closeModal() {
-    document.getElementById('articleModal').style.display = 'none';
+    const modal = document.getElementById('articleModal');
+    const modalContent = modal.querySelector('.modal-content');
+    modal.style.display = 'none';
     document.body.style.overflow = 'auto';
+    // Reset scroll position
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+    }
 }
 
 function closeVisualModal() {
-    document.getElementById('visualModal').style.display = 'none';
+    const modal = document.getElementById('visualModal');
+    const modalContent = modal.querySelector('.modal-content');
+    modal.style.display = 'none';
     document.body.style.overflow = 'auto';
+    // Reset scroll position
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+    }
 }
 
 // Close modal when clicking outside
