@@ -32,6 +32,26 @@ body {
     overflow-x: hidden;
 }
 
+/* Global List Styles */
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    list-style-position: outside;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -69,6 +89,15 @@ body {
     list-style: none;
     gap: 2rem;
     align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
 }
 
 .nav-link {
@@ -575,14 +604,25 @@ section {
 
 .modal-content ul,
 .modal-content ol {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     margin-bottom: 1.5rem;
+    padding-left: 1rem;
     color: var(--text-light);
     line-height: 1.8;
 }
 
 .modal-content li {
     margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    list-style-position: outside;
+}
+
+.modal-content ul li {
+    list-style-type: disc;
+}
+
+.modal-content ol li {
+    list-style-type: decimal;
 }
 
 .visual-guide-content {
