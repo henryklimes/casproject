@@ -429,10 +429,12 @@
             
             if (isCorrect) {
                 gameState.correct++;
-                showResult('Correct! This is a ' + gameState.currentAnswer + ' image.', true);
+                const answerText = gameState.currentAnswer === 'Real' ? 'real' : 'AI';
+                showResult('Correct! This is ' + answerText + ' image.', true);
             } else {
                 gameState.incorrect++;
-                showResult('Incorrect. This is actually a ' + gameState.currentAnswer + ' image.', false);
+                const answerText = gameState.currentAnswer === 'Real' ? 'real' : 'AI';
+                showResult('Incorrect. This is actually ' + answerText + ' image.', false);
             }
             
             updateScore();
