@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Literacy Hub - Understanding Digital Misinformation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Media Literacy Hub</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#visual-guides" class="nav-link">Visual Guides</a></li>
+                <li><a href="#tools" class="nav-link">Evaluation Tools</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Navigate the Digital Information Landscape</h2>
+                <p class="hero-subtitle">Learn to identify fake news, recognize deepfakes, and develop critical thinking skills for the digital age</p>
+                <div class="hero-buttons">
+                    <a href="#articles" class="btn btn-primary">Start Learning</a>
+                    <a href="#visual-guides" class="btn btn-secondary">Explore Visual Guides</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">73%</div>
+                    <div class="stat-label">of people encounter misinformation weekly</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">96%</div>
+                    <div class="stat-label">of deepfakes are non-consensual</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">share news without verifying</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <h2 class="section-title">Educational Articles</h2>
+            <p class="section-subtitle">Explore comprehensive guides on digital misinformation and media literacy</p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">📰</div>
+                    <h3>Understanding Fake News</h3>
+                    <p>Learn what fake news is, how it spreads, and why it's so effective. Discover the psychology behind misinformation and how to protect yourself.</p>
+                    <button class="article-btn" onclick="openArticle('fake-news')">Read More</button>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">🎭</div>
+                    <h3>AI-Generated Deepfakes</h3>
+                    <p>Explore the world of deepfakes: how AI creates realistic fake videos, the technology behind them, and techniques to spot them.</p>
+                    <button class="article-btn" onclick="openArticle('deepfakes')">Read More</button>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">🔍</div>
+                    <h3>Critical Evaluation Techniques</h3>
+                    <p>Master the art of fact-checking. Learn systematic approaches to verify information, check sources, and identify bias.</p>
+                    <button class="article-btn" onclick="openArticle('evaluation')">Read More</button>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">🧠</div>
+                    <h3>Psychology of Misinformation</h3>
+                    <p>Understand why people believe and share false information. Learn about cognitive biases and emotional manipulation tactics.</p>
+                    <button class="article-btn" onclick="openArticle('psychology')">Read More</button>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">🛡️</div>
+                    <h3>Protecting Yourself Online</h3>
+                    <p>Practical strategies to avoid falling for misinformation. Build your personal media literacy toolkit and develop healthy skepticism.</p>
+                    <button class="article-btn" onclick="openArticle('protection')">Read More</button>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-icon">🌐</div>
+                    <h3>Impact on Democracy</h3>
+                    <p>Examine how misinformation affects democratic processes, public trust, and informed decision-making in society.</p>
+                    <button class="article-btn" onclick="openArticle('democracy')">Read More</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Guides Section -->
+    <section id="visual-guides" class="visual-section">
+        <div class="container">
+            <h2 class="section-title">Visual Explanations</h2>
+            <p class="section-subtitle">Interactive guides to help you recognize manipulated content</p>
+            
+            <div class="visual-grid">
+                <div class="visual-card" onclick="openVisualGuide('red-flags')">
+                    <div class="visual-preview">
+                        <div class="visual-icon">🚩</div>
+                    </div>
+                    <h3>Red Flags of Misinformation</h3>
+                    <p>Visual checklist of warning signs</p>
+                </div>
+
+                <div class="visual-card" onclick="openVisualGuide('deepfake-detection')">
+                    <div class="visual-preview">
+                        <div class="visual-icon">👁️</div>
+                    </div>
+                    <h3>Deepfake Detection Guide</h3>
+                    <p>Learn to spot AI-generated content</p>
+                </div>
+
+                <div class="visual-card" onclick="openVisualGuide('source-verification')">
+                    <div class="visual-preview">
+                        <div class="visual-icon">✅</div>
+                    </div>
+                    <h3>Source Verification Process</h3>
+                    <p>Step-by-step verification flowchart</p>
+                </div>
+
+                <div class="visual-card" onclick="openVisualGuide('bias-detection')">
+                    <div class="visual-preview">
+                        <div class="visual-icon">⚖️</div>
+                    </div>
+                    <h3>Identifying Bias</h3>
+                    <p>Recognize different types of media bias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Critical Evaluation Tools</h2>
+            <p class="section-subtitle">Interactive checklists and tools to evaluate online information</p>
+            
+            <div class="tool-container">
+                <div class="evaluation-tool">
+                    <h3>Information Verification Checklist</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">Check the source credibility and author credentials</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Verify the date of publication</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Cross-reference with multiple reliable sources</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Check for emotional manipulation or sensationalism</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check5">
+                            <label for="check5">Examine the URL and domain for suspicious patterns</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check6">
+                            <label for="check6">Look for fact-checking labels or verification badges</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check7">
+                            <label for="check7">Check if images/videos are original or manipulated</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check8">
+                            <label for="check8">Consider the purpose and potential bias of the content</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="resetChecklist()">Reset Checklist</button>
+                </div>
+
+                <div class="red-flags-tool">
+                    <h3>Warning Signs of Misinformation</h3>
+                    <div class="red-flags-grid">
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Extreme Emotions</h4>
+                            <p>Content designed to provoke strong emotional reactions</p>
+                        </div>
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Too Good to Be True</h4>
+                            <p>Claims that seem unbelievable or too perfect</p>
+                        </div>
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Missing Sources</h4>
+                            <p>No citations, links, or verifiable references</p>
+                        </div>
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Urgency Tactics</h4>
+                            <p>"Act now" or "Limited time" pressure</p>
+                        </div>
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Conspiracy Theories</h4>
+                            <p>Claims of secret plots or cover-ups</p>
+                        </div>
+                        <div class="flag-item">
+                            <span class="flag-icon">⚠️</span>
+                            <h4>Poor Grammar</h4>
+                            <p>Multiple spelling errors or awkward phrasing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About This Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        The rapid spread of digital misinformation, including fake news and AI-generated deepfakes, 
+                        has made it increasingly difficult for students to distinguish between reliable and unreliable 
+                        information online.
+                    </p>
+                    <p>
+                        This affects democratic decision-making, public trust, and individual judgment, making media 
+                        literacy an essential modern skill. Our mission is to educate students and the wider community 
+                        about digital misinformation by providing accessible articles, visual explanations, and practical 
+                        tools that help users critically evaluate online information and recognize manipulated or false content.
+                    </p>
+                    <div class="mission-points">
+                        <div class="mission-point">
+                            <span class="mission-icon">🎯</span>
+                            <div>
+                                <h4>Educational Resources</h4>
+                                <p>Comprehensive articles covering all aspects of digital misinformation</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <span class="mission-icon">👁️</span>
+                            <div>
+                                <h4>Visual Learning</h4>
+                                <p>Interactive guides and visual explanations for better understanding</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <span class="mission-icon">🛠️</span>
+                            <div>
+                                <h4>Practical Tools</h4>
+                                <p>Checklists and evaluation frameworks you can use immediately</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Media Literacy Hub. Created to promote digital literacy and critical thinking.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Articles -->
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="articleContent"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Visual Guides -->
+    <div id="visualModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVisualModal()">&times;</span>
+            <div id="visualContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
