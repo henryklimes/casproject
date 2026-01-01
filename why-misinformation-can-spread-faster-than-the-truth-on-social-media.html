@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Misinformation Can Spread Faster Than the Truth on Social Media - Media Literacy Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .article-page {
+            padding: 4rem 0 6rem;
+            background: linear-gradient(to bottom, var(--orange-light), #fff);
+            min-height: 70vh;
+        }
+        .article-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+            padding: 4rem 4.5rem;
+            border: 1px solid rgba(234, 88, 12, 0.1);
+            position: relative;
+        }
+        .article-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 1.25rem 1.25rem 0 0;
+        }
+        .article-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--orange-light);
+        }
+        .article-header h1 {
+            font-size: 2.75rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+        .article-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+        .article-back-link:hover {
+            color: var(--primary-dark);
+            gap: 0.75rem;
+        }
+        .article-content {
+            color: var(--text-dark);
+            line-height: 1.85;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+        .article-content h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+            padding-left: 1.25rem;
+            border-left: 4px solid var(--primary-color);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+        .article-content h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .article-content p {
+            margin-bottom: 1.75rem;
+            color: var(--text-dark);
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .article-content p:first-of-type {
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: var(--text-dark);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-left: 0;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            color: var(--text-dark);
+        }
+        .article-content li {
+            margin-bottom: 0.875rem;
+            padding-left: 0.5rem;
+            line-height: 1.75;
+        }
+        .article-content strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        .article-content h3 + ul {
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .article-page {
+                padding: 2rem 0 4rem;
+            }
+            .article-wrapper {
+                padding: 2.5rem 2rem;
+                border-radius: 1rem;
+            }
+            .article-header {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-content {
+                font-size: 1rem;
+            }
+            .article-content p:first-of-type {
+                font-size: 1.1rem;
+            }
+            .article-content h2 {
+                font-size: 1.75rem;
+                margin-top: 2.5rem;
+            }
+            .article-content h3 {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Media Literacy Hub</a></h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#articles" class="nav-link">Guides</a></li>
+                <li><a href="index.html#visual-guides" class="nav-link">Cards</a></li>
+                <li><a href="index.html#tools" class="nav-link">Evaluation Tools</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="articles.html" class="nav-link active">Articles</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Page -->
+    <section class="article-page">
+        <div class="container">
+            <div class="article-wrapper">
+                <div class="article-header">
+                    <a href="articles.html" class="article-back-link">← Back to Articles</a>
+                    <h1>Why Misinformation Can Spread Faster Than the Truth on Social Media</h1>
+                </div>
+                
+                <div class="article-content">
+                    <p>Social media has transformed how information spreads, allowing news to reach millions of
+                        people within minutes. However, multiple studies and institutional reports show that
+                        misleading or false information often circulates more rapidly than verified facts. This
+                        happens because of a combination of human behavior, platform design, and economic
+                        incentives that prioritize attention and engagement over accuracy.</p>
+                    <p>According to the World Economic Forum, misinformation is often designed to attract
+                        attention by using emotional language, dramatic visuals, or alarming claims. Content that
+                        triggers strong emotional responses such as fear, anger, or excitement is more likely to be
+                        shared, as users tend to react instinctively rather than analytically. In contrast, factual
+                        information is often presented cautiously and may appear less engaging in fast-moving
+                        social media environments.</p>
+                    <p>Social media platforms are structured to maximize user engagement because attention
+                        directly translates into advertising revenue. Algorithms therefore promote content that
+                        generates high interaction, regardless of whether it is accurate. Since misleading
+                        information often produces stronger engagement, it is more likely to be amplified and
+                        recommended to additional users.</p>
+                    <p>Research by the Reuters Institute for the Study of Journalism highlights that social media
+                        encourages rapid sharing through features such as reposts and likes, which require little
+                        effort or reflection. Users frequently share headlines without reading full articles or
+                        checking sources. This speed allows misinformation to spread widely before corrections or
+                        verified reporting can reach the same audience.</p>
+                    <p>Misinformation spreads faster than the truth on social media because it captures attention,
+                        benefits from engagement-driven algorithms, and moves through trusted social networks at
+                        high speed. Understanding these dynamics highlights the importance of verifying
+                        information and developing strong media literacy skills. Responsible sharing is essential to
+                        reducing the impact of misinformation in digital spaces.</p>
+                    
+                    <h3>Sources</h3>
+                    <ul>
+                        <li>World Economic Forum. (2023). Global Risks Report: Misinformation and Disinformation.</li>
+                        <li>Van Bavel, J. J., Rathje, S., Harris, E., Robertson, C., & Sternisko, A. (2021). How social media shapes polarization.</li>
+                        <li>Reuters Institute for the Study of Journalism. (2022). Digital News Report.</li>
+                        <li>UK House of Commons Digital, Culture, Media and Sport Committee. (2019). Disinformation and "Fake News" Final Report.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jindrich Klimes & Pavel Klimes. Created to promote digital literacy and critical thinking.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

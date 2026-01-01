@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are AI Deepfakes and Why Are They Dangerous - Media Literacy Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .article-page {
+            padding: 4rem 0 6rem;
+            background: linear-gradient(to bottom, var(--orange-light), #fff);
+            min-height: 70vh;
+        }
+        .article-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+            padding: 4rem 4.5rem;
+            border: 1px solid rgba(234, 88, 12, 0.1);
+            position: relative;
+        }
+        .article-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 1.25rem 1.25rem 0 0;
+        }
+        .article-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--orange-light);
+        }
+        .article-header h1 {
+            font-size: 2.75rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+        .article-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+        .article-back-link:hover {
+            color: var(--primary-dark);
+            gap: 0.75rem;
+        }
+        .article-content {
+            color: var(--text-dark);
+            line-height: 1.85;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+        .article-content h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+            padding-left: 1.25rem;
+            border-left: 4px solid var(--primary-color);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+        .article-content h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .article-content p {
+            margin-bottom: 1.75rem;
+            color: var(--text-dark);
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .article-content p:first-of-type {
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: var(--text-dark);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-left: 0;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            color: var(--text-dark);
+        }
+        .article-content li {
+            margin-bottom: 0.875rem;
+            padding-left: 0.5rem;
+            line-height: 1.75;
+        }
+        .article-content strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        .article-content h3 + ul {
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .article-page {
+                padding: 2rem 0 4rem;
+            }
+            .article-wrapper {
+                padding: 2.5rem 2rem;
+                border-radius: 1rem;
+            }
+            .article-header {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-content {
+                font-size: 1rem;
+            }
+            .article-content p:first-of-type {
+                font-size: 1.1rem;
+            }
+            .article-content h2 {
+                font-size: 1.75rem;
+                margin-top: 2.5rem;
+            }
+            .article-content h3 {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Media Literacy Hub</a></h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#articles" class="nav-link">Guides</a></li>
+                <li><a href="index.html#visual-guides" class="nav-link">Cards</a></li>
+                <li><a href="index.html#tools" class="nav-link">Evaluation Tools</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="articles.html" class="nav-link active">Articles</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Page -->
+    <section class="article-page">
+        <div class="container">
+            <div class="article-wrapper">
+                <div class="article-header">
+                    <a href="articles.html" class="article-back-link">← Back to Articles</a>
+                    <h1>What Are AI Deepfakes and Why Are They Dangerous</h1>
+                </div>
+                
+                <div class="article-content">
+                    <p>Advances in artificial intelligence have made it possible to create highly realistic fake images,
+                        videos, and audio recordings known as AI deepfakes. These manipulated media pieces can
+                        make people appear to say or do things that never happened. While the technology behind
+                        deepfakes can have creative and educational uses, there are warnings that it also poses
+                        serious risks to trust, privacy, and public discourse.</p>
+                        <p>
+                            AI deepfakes are created using machine-learning techniques, particularly deep neural
+networks, that analyze large amounts of real images, videos, or audio of a person. The
+system learns patterns such as facial movements, voice tone, and expressions, and then
+generates synthetic media that closely imitates the real individual. As this technology
+improves, deepfakes are becoming increasingly difficult to distinguish from authentic
+content.
+                        </p>
+                        <p>It can be said that deepfakes are effective because humans naturally trust visual and audio
+                            evidence. When a video or voice recording appears realistic, people are more likely to
+                            believe it without questioning its authenticity. Social media platforms further amplify this
+                            effect by allowing deepfake content to spread quickly before it can be verified or removed.</p>
+                            <p>
+                                Deepfakes can be used to spread misinformation, manipulate public opinion, and damage
+reputations. They can be used to impersonate public figures, create false evidence or carry
+out scams such as voice-cloning fraud. Deepfakes also raise ethical concerns related to
+consent, privacy and the erosion of trust in digital media.
+                            </p>
+                            <p>As deepfakes become more common, they threaten to undermine trust in legitimate media.
+                                If people can no longer be sure whether videos or recordings are real, this can lead to
+                                confusion, skepticism, and disengagement from sources, that have been reliable until now.
+                                This phenomenon, sometimes called the “liar’s dividend”, can allow real wrongdoing to be
+                                dismissed as fake, further weakening accountability.</p>
+                                <p>AI deepfakes represent a powerful but risky technological development. While they
+                                    demonstrate the capabilities of modern artificial intelligence, they also pose significant
+                                    dangers when used irresponsibly. Understanding how deepfakes are created and
+                                    recognizing their potential impact is an essential part of media literacy in the digital age.</p>
+                                
+                                <h3>Sources</h3>
+                                <ul>
+                                    <li>Chesney, R., & Citron, D. (2019). Deepfakes and the New Disinformation War. Foreign Affairs.</li>
+                                    <li>Europol. (2024). Facing Reality? Law Enforcement and the Challenge of Deepfakes.</li>
+                                    <li>Karen Hao, MIT Technology Review.</li>
+                                </ul>
+                                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jindrich Klimes & Pavel Klimes. Created to promote digital literacy and critical thinking.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

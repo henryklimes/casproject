@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Social Media Algorithms Can Shape Our Beliefs - Media Literacy Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .article-page {
+            padding: 4rem 0 6rem;
+            background: linear-gradient(to bottom, var(--orange-light), #fff);
+            min-height: 70vh;
+        }
+        .article-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 20px rgba(234, 88, 12, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+            padding: 4rem 4.5rem;
+            border: 1px solid rgba(234, 88, 12, 0.1);
+            position: relative;
+        }
+        .article-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 1.25rem 1.25rem 0 0;
+        }
+        .article-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--orange-light);
+        }
+        .article-header h1 {
+            font-size: 2.75rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+        .article-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+        .article-back-link:hover {
+            color: var(--primary-dark);
+            gap: 0.75rem;
+        }
+        .article-content {
+            color: var(--text-dark);
+            line-height: 1.85;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+        .article-content h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+            padding-left: 1.25rem;
+            border-left: 4px solid var(--primary-color);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+        .article-content h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .article-content p {
+            margin-bottom: 1.75rem;
+            color: var(--text-dark);
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .article-content p:first-of-type {
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: var(--text-dark);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-left: 0;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            color: var(--text-dark);
+        }
+        .article-content li {
+            margin-bottom: 0.875rem;
+            padding-left: 0.5rem;
+            line-height: 1.75;
+        }
+        .article-content strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        .article-content h3 + ul {
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .article-page {
+                padding: 2rem 0 4rem;
+            }
+            .article-wrapper {
+                padding: 2.5rem 2rem;
+                border-radius: 1rem;
+            }
+            .article-header {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-content {
+                font-size: 1rem;
+            }
+            .article-content p:first-of-type {
+                font-size: 1.1rem;
+            }
+            .article-content h2 {
+                font-size: 1.75rem;
+                margin-top: 2.5rem;
+            }
+            .article-content h3 {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Media Literacy Hub</a></h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#articles" class="nav-link">Guides</a></li>
+                <li><a href="index.html#visual-guides" class="nav-link">Cards</a></li>
+                <li><a href="index.html#tools" class="nav-link">Evaluation Tools</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="articles.html" class="nav-link active">Articles</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Page -->
+    <section class="article-page">
+        <div class="container">
+            <div class="article-wrapper">
+                <div class="article-header">
+                    <a href="articles.html" class="article-back-link">← Back to Articles</a>
+                    <h1>How Social Media Algorithms Can Shape Our Beliefs</h1>
+                </div>
+                
+                <div class="article-content">
+                    <p>Social media platforms have become a major source of news and information, especially for
+                        young people. Content on platforms such as Instagram, TikTok, YouTube, and X is not shown
+                        randomly. Instead, algorithms decide what users see based on their past behavior. While
+                        these systems are designed to increase engagement, research shows that they can also
+                        influence opinions, reinforce existing beliefs, and contribute to the spread of
+                        misinformation.</p>
+                    <p>Social media algorithms analyze user data such as likes, shares, watch time, and interactions
+                        with specific accounts. Based on this information, they predict what content a user is most
+                        likely to engage with and prioritize similar posts. This process creates a highly personalized
+                        feed, meaning that we can see only posts that does not oppose our opinion.</p>
+                    <p>Algorithmic personalization can lead to echo chambers and filter bubbles, where users are
+                        mainly exposed to information that confirms their existing beliefs. When opposing
+                        viewpoints are shown less frequently, users may develop a distorted sense of reality and
+                        believe that their views are more widely shared than they actually are. This can reduce
+                        critical thinking and increase polarization.</p>
+                    <p>Additionally, emotionally charged content, such as posts that provoke anger or fear, spreads
+                        faster online than neutral or factual information. Because algorithms prioritize engagement
+                        rather than accuracy, sensational or misleading content is often amplified. This creates an
+                        environment where misinformation can spread rapidly, especially when it captures strong
+                        emotional reactions.</p>
+                    <p>Social media algorithms do not distinguish between true and false information. As a result,
+                        false content can spread widely if it attracts attention. This problem has intensified with the
+                        AI-generated images, videos, and deepfakes, which can make misinformation appear highly
+                        realistic. Repeated exposure to such content can make false claims seem familiar and
+                        trustworthy. Positive side of this thing is that we can see it changing, as for example X
+                        introduced a way to correct misinformation using additional comments to posts, which are
+                        being approved by the community vote. On the other hand, as the community votes, closed
+                        communities can upvote for additional comment which does not have to be truthful.</p>
+                    <p>Repeated exposure to similar information strengthens beliefs and makes them harder to
+                        challenge. Algorithm-driven feeds can therefore reinforce existing opinions, increase
+                        distrust in reliable sources, and contribute to social division. These effects are particularly
+                        significant for users who rely on social media as their primary source of news.</p>
+                    <p>Social media algorithms play a powerful role in shaping what people see and believe online.
+                        While they improve personalization and engagement, they also create risks by limiting
+                        exposure to diverse viewpoints and amplifying misinformation. Understanding how
+                        algorithms work and developing strong media literacy skills are essential for navigating the
+                        digital world responsibly.</p>
+                    
+                    <h3>Sources</h3>
+                    <ul>
+                        <li>Pariser, E. (2011). The Filter Bubble: What the Internet Is Hiding from You. Penguin Press.</li>
+                        <li>Vosoughi, S., Roy, D., & Aral, S. (2018). "The spread of true and false news online." Science, 359(6380), 1146–1151.</li>
+                        <li>Pew Research Center. (2020). News Use Across Social Media Platforms.</li>
+                        <li>UNESCO. (2021). Media and Information Literacy: Curriculum for Educators and Learners.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jindrich Klimes & Pavel Klimes. Created to promote digital literacy and critical thinking.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

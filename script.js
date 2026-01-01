@@ -95,7 +95,7 @@ const articles = {
         title: 'AI-Generated Deepfakes',
         content: `
             <h2>AI-Generated Deepfakes</h2>
-            <p>Deepfakes are synthetic media created using artificial intelligence, particularly deep learning techniques. They can create highly realistic fake videos, images, and audio that are increasingly difficult to distinguish from authentic content.</p>
+            <p>Deepfakes are synthetic media created using artificial intelligence, particularly deep learning techniques. They can create highly realistic fake videos, images and audio that are increasingly difficult to distinguish from authentic content.</p>
             
             <h3>What Are Deepfakes?</h3>
             <p>Deepfakes use machine learning algorithms, specifically generative adversarial networks (GANs), to:</p>
@@ -111,7 +111,7 @@ const articles = {
             <ul>
                 <li><strong>Training data</strong> - AI models learn from thousands of images/videos of the target person</li>
                 <li><strong>Neural networks</strong> - Complex algorithms that learn patterns and generate new content</li>
-                <li><strong>Face mapping</strong> - Detailed analysis of facial features, expressions, and movements</li>
+                <li><strong>Face mapping</strong> - Detailed analysis of facial features, expressions and movements</li>
                 <li><strong>Real-time processing</strong> - Advanced systems can create deepfakes in real-time</li>
             </ul>
             
@@ -121,7 +121,7 @@ const articles = {
                 <li><strong>Unnatural blinking</strong> - Irregular or missing blinks</li>
                 <li><strong>Facial inconsistencies</strong> - Mismatched skin tones or lighting</li>
                 <li><strong>Audio mismatches</strong> - Lip movements don't match speech</li>
-                <li><strong>Unrealistic movements</strong> - Jerky or unnatural head movements</li>
+                <li><strong>Unrealistic movements</strong> - Weird or unnatural head movements</li>
                 <li><strong>Artifacts</strong> - Blurring or distortion around the face</li>
                 <li><strong>Context clues</strong> - Does the content make sense? Is it from a reliable source?</li>
             </ul>
@@ -150,7 +150,7 @@ const articles = {
         title: 'Critical Evaluation Techniques',
         content: `
             <h2>Critical Evaluation Techniques</h2>
-            <p>Developing strong critical evaluation skills is essential for navigating today's information landscape. These techniques help you assess the credibility, accuracy, and reliability of online content.</p>
+            <p>Developing strong critical evaluation skills is essential for navigating today's information landscape. These techniques help you assess the credibility, accuracy and reliability of online content.</p>
             
             <h3>The SIFT Method</h3>
             <p>SIFT is a four-step process for evaluating information:</p>
@@ -327,7 +327,7 @@ const articles = {
         title: 'Impact on Democracy',
         content: `
             <h2>Impact on Democracy</h2>
-            <p>Digital misinformation poses significant threats to democratic processes, public trust, and informed decision-making. Understanding these impacts is crucial for protecting democratic institutions.</p>
+            <p>Digital misinformation poses significant threats to democratic processes, public trust and informed decision-making. Understanding these impacts is crucial for protecting democratic institutions.</p>
             
             <h3>Threats to Democratic Processes</h3>
             <p>Misinformation affects democracy in several ways:</p>
@@ -336,16 +336,6 @@ const articles = {
                 <li><strong>Polarization</strong> - Deepens divisions between different groups</li>
                 <li><strong>Undermining trust</strong> - Erodes confidence in institutions and media</li>
                 <li><strong>Manipulating public opinion</strong> - Shapes beliefs through false narratives</li>
-            </ul>
-            
-            <h3>Erosion of Public Trust</h3>
-            <p>When misinformation spreads:</p>
-            <ul>
-                <li>People lose trust in legitimate news sources</li>
-                <li>Institutions face credibility challenges</li>
-                <li>Experts and authorities are questioned</li>
-                <li>Conspiracy theories gain traction</li>
-                <li>Social cohesion weakens</li>
             </ul>
             
             <h3>Impact on Decision-Making</h3>
@@ -361,7 +351,6 @@ const articles = {
             <p>Examples of misinformation's impact:</p>
             <ul>
                 <li><strong>Election campaigns</strong> - False stories spread during elections worldwide</li>
-                <li><strong>Public health crises</strong> - Vaccine misinformation during pandemics</li>
                 <li><strong>Social movements</strong> - False narratives used to divide communities</li>
                 <li><strong>International relations</strong> - State-sponsored disinformation campaigns</li>
             </ul>
@@ -370,8 +359,6 @@ const articles = {
             <p>To safeguard democratic processes:</p>
             <ol>
                 <li><strong>Promote media literacy</strong> - Educate citizens about misinformation</li>
-                <li><strong>Support quality journalism</strong> - Fund and protect independent media</li>
-                <li><strong>Regulate platforms</strong> - Hold social media companies accountable</li>
                 <li><strong>Encourage critical thinking</strong> - Teach evaluation skills in schools</li>
                 <li><strong>Foster dialogue</strong> - Create spaces for respectful discussion</li>
                 <li><strong>Transparency</strong> - Make information sources clear and verifiable</li>
@@ -401,7 +388,7 @@ const visualGuides = {
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
                 <div style="background: #fef3c7; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
                     <h3 style="color: #92400e; margin-bottom: 0.5rem;">🚩 Extreme Emotions</h3>
-                    <p style="color: #78350f;">Content designed to make you feel angry, scared, or outraged</p>
+                    <p style="color: #78350f;">Content designed to make you feel angry, scared or outraged</p>
                 </div>
                 
                 <div style="background: #fef3c7; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
@@ -411,7 +398,7 @@ const visualGuides = {
                 
                 <div style="background: #fef3c7; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
                     <h3 style="color: #92400e; margin-bottom: 0.5rem;">🚩 No Sources</h3>
-                    <p style="color: #78350f;">Missing citations, links, or verifiable references</p>
+                    <p style="color: #78350f;">Missing citations, links or verifiable references</p>
                 </div>
                 
                 <div style="background: #fef3c7; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
@@ -430,10 +417,10 @@ const visualGuides = {
                 </div>
             </div>
             
-            <h3>Quick Decision Tree</h3>
+            <h3>Quick Decision List</h3>
             <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0;">
                 <p><strong>Ask yourself:</strong></p>
-                <ol style="margin-left: 1.5rem; line-height: 2;">
+                <ol style="line-height: 2;">
                     <li>Does this make me feel extremely emotional? → <span style="color: #ef4444;">RED FLAG</span></li>
                     <li>Can I verify this with other sources? → If NO: <span style="color: #ef4444;">RED FLAG</span></li>
                     <li>Is the source credible? → If NO: <span style="color: #ef4444;">RED FLAG</span></li>
@@ -457,25 +444,20 @@ const visualGuides = {
                 </div>
                 
                 <div style="background: #dbeafe; padding: 1.5rem; border-radius: 0.5rem;">
-                    <h4 style="color: #1e40af; margin-bottom: 0.5rem;">🎭 Facial Inconsistencies</h4>
-                    <p>Look for mismatched skin tones, lighting that doesn't match the background, or blurring around the face edges.</p>
-                </div>
-                
-                <div style="background: #dbeafe; padding: 1.5rem; border-radius: 0.5rem;">
                     <h4 style="color: #1e40af; margin-bottom: 0.5rem;">👄 Lip Sync Issues</h4>
                     <p>Audio and lip movements may not match perfectly. Watch for delays or misalignments.</p>
                 </div>
                 
                 <div style="background: #dbeafe; padding: 1.5rem; border-radius: 0.5rem;">
                     <h4 style="color: #1e40af; margin-bottom: 0.5rem;">🔄 Unnatural Movements</h4>
-                    <p>Jerky head movements, unrealistic facial expressions, or movements that don't match speech patterns.</p>
+                    <p>Weird head movements, unrealistic facial expressions or movements that don't match speech patterns.</p>
                 </div>
             </div>
             
             <h3>Detection Checklist</h3>
             <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0;">
                 <p><strong>When evaluating a video:</strong></p>
-                <ul style="margin-left: 1.5rem; line-height: 2;">
+                <ul style="line-height: 2;">
                     <li>✓ Watch the eyes - do they blink naturally?</li>
                     <li>✓ Check lighting - is it consistent?</li>
                     <li>✓ Listen carefully - do lips match speech?</li>
@@ -486,7 +468,7 @@ const visualGuides = {
             </div>
             
             <h3>Tools for Detection</h3>
-            <ul style="margin-left: 1.5rem; line-height: 2;">
+            <ul style="line-height: 2;">
                 <li>Reverse video search (Google, Yandex)</li>
                 <li>Deepfake detection software (when available)</li>
                 <li>Official source verification</li>
@@ -507,7 +489,7 @@ const visualGuides = {
             
             <div style="background: #ecfdf5; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0; border-left: 4px solid #10b981;">
                 <h3 style="color: #065f46; margin-bottom: 1rem;">Step 2: Check Credibility</h3>
-                <ul style="margin-left: 1.5rem; line-height: 2;">
+                <ul style="line-height: 2;">
                     <li>What are the author's credentials?</li>
                     <li>Is the publication reputable?</li>
                     <li>What is their track record for accuracy?</li>
@@ -517,7 +499,7 @@ const visualGuides = {
             
             <div style="background: #ecfdf5; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0; border-left: 4px solid #10b981;">
                 <h3 style="color: #065f46; margin-bottom: 1rem;">Step 3: Examine the URL</h3>
-                <ul style="margin-left: 1.5rem; line-height: 2;">
+                <ul style="line-height: 2;">
                     <li>Does the domain look legitimate?</li>
                     <li>Watch for misspellings (e.g., "cnn.com" vs "cnn.co")</li>
                     <li>Check for suspicious patterns</li>
@@ -528,7 +510,7 @@ const visualGuides = {
             <div style="background: #ecfdf5; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0; border-left: 4px solid #10b981;">
                 <h3 style="color: #065f46; margin-bottom: 1rem;">Step 4: Cross-Reference</h3>
                 <p>Find other sources covering the same topic:</p>
-                <ul style="margin-left: 1.5rem; line-height: 2;">
+                <ul style="line-height: 2;">
                     <li>Do multiple reliable sources report this?</li>
                     <li>Are the facts consistent across sources?</li>
                     <li>What do fact-checking sites say?</li>
@@ -581,14 +563,14 @@ const visualGuides = {
                 
                 <div style="background: #fef3c7; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #f59e0b;">
                     <h4 style="color: #92400e; margin-bottom: 0.5rem;">⚖️ Commercial Bias</h4>
-                    <p>Content influenced by advertisers, sponsors, or financial interests rather than objective reporting.</p>
+                    <p>Content influenced by advertisers, sponsors or financial interests rather than objective reporting.</p>
                 </div>
             </div>
             
             <h3>How to Detect Bias</h3>
             <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0;">
                 <p><strong>Ask these questions:</strong></p>
-                <ul style="margin-left: 1.5rem; line-height: 2;">
+                <ul style="line-height: 2;">
                     <li>What perspective is being emphasized?</li>
                     <li>What information is missing?</li>
                     <li>What language is used? (Emotional vs. neutral)</li>
@@ -598,35 +580,8 @@ const visualGuides = {
                 </ul>
             </div>
             
-            <h3>Bias Spectrum</h3>
-            <div style="background: #e0e7ff; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0;">
-                <p style="text-align: center; margin-bottom: 1rem;"><strong>Understanding the Bias Spectrum</strong></p>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div style="text-align: center;">
-                        <div style="background: #dc2626; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; margin-bottom: 0.5rem;">Extreme Left</div>
-                        <small>Heavily biased</small>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background: #f59e0b; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; margin-bottom: 0.5rem;">Left</div>
-                        <small>Some bias</small>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background: #10b981; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; margin-bottom: 0.5rem;">Center</div>
-                        <small>Minimal bias</small>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background: #f59e0b; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; margin-bottom: 0.5rem;">Right</div>
-                        <small>Some bias</small>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="background: #dc2626; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; margin-bottom: 0.5rem;">Extreme Right</div>
-                        <small>Heavily biased</small>
-                    </div>
-                </div>
-            </div>
-            
             <h3>Best Practices</h3>
-            <ul style="margin-left: 1.5rem; line-height: 2;">
+            <ul style="line-height: 2;">
                 <li>Read multiple sources with different perspectives</li>
                 <li>Look for primary sources when possible</li>
                 <li>Be aware of your own biases</li>
@@ -727,6 +682,48 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Counting Animation Function
+function animateCounter(element, target, duration = 1000) {
+    const start = 0;
+    const increment = target / (duration / 16); // 60fps
+    let current = start;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current) + '%';
+    }, 16);
+}
+
+// Animate stats when they come into view
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach((statEl, index) => {
+                const text = statEl.textContent;
+                const number = parseInt(text.replace('%', ''));
+                if (number && !statEl.dataset.animated) {
+                    statEl.dataset.animated = 'true';
+                    // Add appearance animation with staggered delay
+                    setTimeout(() => {
+                        statEl.classList.add('animate-in');
+                        statEl.textContent = '0%';
+                        // Start counting after appearance animation
+                        setTimeout(() => {
+                            animateCounter(statEl, number, 1000);
+                        }, 200);
+                    }, index * 100); // Stagger each number by 100ms
+                }
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.article-card, .visual-card, .stat-card');
@@ -736,5 +733,36 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+    
+    // Observe hero stats for counting animation
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) {
+        // Check if stats are already visible (at top of page)
+        const rect = heroStats.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible) {
+            // Start animation immediately if already visible
+            const statNumbers = heroStats.querySelectorAll('.stat-number');
+            statNumbers.forEach((statEl, index) => {
+                const text = statEl.textContent;
+                const number = parseInt(text.replace('%', ''));
+                if (number) {
+                    // Add appearance animation with staggered delay
+                    setTimeout(() => {
+                        statEl.classList.add('animate-in');
+                        statEl.textContent = '0%';
+                        // Start counting after appearance animation
+                        setTimeout(() => {
+                            animateCounter(statEl, number, 1000);
+                        }, 200);
+                    }, index * 100 + 300); // Stagger each number by 100ms with initial delay
+                }
+            });
+        } else {
+            // Observe for when it comes into view
+            statsObserver.observe(heroStats);
+        }
+    }
 });
 
